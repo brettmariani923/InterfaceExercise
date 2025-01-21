@@ -22,7 +22,7 @@ public class Truck : ICompany, IVehicle
 
     public void DisplayDetails()
    {
-        Console.WriteLine($"Car Details:\n" +
+        Console.WriteLine($"Truck Details:\n" +
         $"Wheels: {NumberOfWheels}, MPG: {MilesPerGallon}, Engine: {TypeOfEngine}, Doors: {NumberOfDoors}\n" +
         $"CEO: {Ceo}, Stock Price: {StockPrice}");
    }

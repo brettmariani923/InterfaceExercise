@@ -22,7 +22,7 @@ public class SUV : IVehicle, ICompany
 
     public void DisplayDetails()
    {
-        Console.WriteLine($"Car Details:\n" +
+        Console.WriteLine($"SUV Details:\n" +
         $"Wheels: {NumberOfWheels}, MPG: {MilesPerGallon}, Engine: {TypeOfEngine}, Doors: {NumberOfDoors}\n" +
         $"CEO: {Ceo}, Stock Price: {StockPrice}");
    }
