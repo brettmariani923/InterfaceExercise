@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Security.Cryptography.X509Certificates;
 
 namespace InterfaceExercise
 {
@@ -37,13 +38,54 @@ namespace InterfaceExercise
 
             //Now, create objects of your 3 classes and give their members values.
             //Creatively display and organize their values
-            
+
+            Car car = new Car() 
+            {
+                HasTrunk= true,
+                HasFourWheelDrive = true,
+                NumberOfWheels = 4,
+                MilesPerGallon = 32,
+                TypeOfEngine = "V8",
+                NumberOfDoors = 4,
+                Ceo = "Tony Bolognia",
+                StockPrice = 120,
+
+            };
+
+            Truck truck = new Truck()
+            {
+                HasOpenBed = true,
+                HasRadio = true,
+                NumberOfWheels = 4,
+                MilesPerGallon = 22,
+                TypeOfEngine = "V8",
+                NumberOfDoors = 2,
+                Ceo = "Bigby Belly",
+                StockPrice = 39,
+            };
+
+            SUV suv = new SUV()
+            {
+                NumberOfSeats = 8,
+                HasTv = true,
+                NumberOfWheels = 4,
+                MilesPerGallon = 12,
+                TypeOfEngine = "V8",
+                NumberOfDoors = 4,
+                Ceo = "Boy Howdy",
+                StockPrice = 1999,
+            };
+
             //Option for displaying values: 
             //Create a stubbed out method called DisplayDetails in your IVehicle interface.
             //Implement the stubbed out method in the derived classes.
             //In the scope of them method, use string interpolation to display property values.
             //In order to also interpolate values from ICompany, research how to extend interfaces.
-            
+            car.DisplayDetails();
+
+            truck.DisplayDetails();
+
+            suv.DisplayDetails();
         }
     }
 }
